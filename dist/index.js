@@ -270,7 +270,7 @@ process.umask = function() { return 0; };
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 function makeEmptyFunction(arg) {
@@ -519,7 +519,7 @@ var defaultProps = {
 };
 
 var isReady = function isReady() {
-    return typeof window !== 'undefined' && typeof window.grecaptcha !== 'undefined';
+    return typeof window !== "undefined" && typeof window.grecaptcha !== "undefined" && typeof window.grecaptcha.render === 'function';
 };
 
 var readyCheck = void 0;
